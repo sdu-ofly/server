@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration 	status="info" monitorInterval="10">
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%p][%d{yyyy-MM-dd HH:mm:ss}][%t][%c] %m%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="DEBUG">
+			<AppenderRef ref="console"></AppenderRef>
+		</Root>
+	</Loggers>
+	<Logger name="org.springframework.context.annotation" level="DEBUG" additivity="true"/> 
+</Configuration>

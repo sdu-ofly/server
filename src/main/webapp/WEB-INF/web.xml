@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                http://xmlns.jcp.org/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+	<display-name>ofly-web-app</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+    
+    <!-- log4j2 configuration -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:configs/log/log4j2.xml</param-value>
+	</context-param> 
+	
+	<!-- Spring contextConfigLocation -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:configs/mybatis/mybatis-datasources.xml,
+			classpath:configs/mybatis/mybatis-transaction.xml,
+			classpath:configs/mybatis/*/config/mybatis.xml
+		</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>ofly-server</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:configs/spring/spring-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ofly-server</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>
