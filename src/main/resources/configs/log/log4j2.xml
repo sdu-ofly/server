@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration 	status="info" monitorInterval="10">
+<Configuration  monitorInterval="10">
 	<Appenders>
 		<Console name="console" target="SYSTEM_OUT">
 			<PatternLayout pattern="[%p][%d{yyyy-MM-dd HH:mm:ss}][%t][%c] %m%n" />
 		</Console>
 	</Appenders>
 	<Loggers>
-		<Root level="DEBUG">
+		<Root level="trace">
 			<AppenderRef ref="console"></AppenderRef>
 		</Root>
+	<Logger name="org.springframework.context.annotation" level="trace" additivity="true"/> 
+	<Logger name="org.springframework" level="info" additivity="true">
+		<AppenderRef ref="console"></AppenderRef>
+	</Logger>
 	</Loggers>
-	<Logger name="org.springframework.context.annotation" level="DEBUG" additivity="true"/> 
 </Configuration>

@@ -9,18 +9,17 @@
 	</welcome-file-list>
     
     <!-- log4j2 configuration -->
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:configs/log/log4j2.xml</param-value>
-	</context-param> 
-	
+     <context-param>
+         <param-name>log4jConfiguration</param-name>
+         <param-value>classpath:configs/log/log4j2.xml</param-value>
+     </context-param>
 	<!-- Spring contextConfigLocation -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			classpath:configs/mybatis/mybatis-datasources.xml,
 			classpath:configs/mybatis/mybatis-transaction.xml,
-			classpath:configs/mybatis/*/config/mybatis.xml
+			classpath:configs/*/mybatis.xml
 		</param-value>
 	</context-param>
 	<listener>
