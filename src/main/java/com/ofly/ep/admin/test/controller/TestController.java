@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestController {
 	private static final Logger logger = LogManager.getLogger(TestController.class);
 
-	@RequestMapping("/init")
+	@RequestMapping("/init") 
 	public String init() {
 		logger.error("en --");
 		return "test/init";
