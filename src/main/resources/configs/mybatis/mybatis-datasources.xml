@@ -12,6 +12,19 @@
                         http://www.springframework.org/schema/tx/spring-tx.xsd 
                         http://www.springframework.org/schema/mvc    
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+       <!--  不起作用 再研究 -->            
+    <bean id="multiDataSource" class="com.ofly.core.datasource.DataSources">
+		<property name="targetDataSources">
+	        <map key-type="java.lang.String">
+	            <!--use key to choose datasource-->
+	            <entry value-ref="dataSourceDefault" key="dataSourceDefault"></entry>
+	        </map>
+	    </property>
+	    <!--set default dataSource-->
+	    <property name="defaultTargetDataSource" ref="dataSourceDefault">
+	    </property>
+	</bean>
+	
     <!-- the web-app default datasource -->        
 	<bean id="dataSourceDefault" class="com.alibaba.druid.pool.DruidDataSource" destroy-method = "close">
 		<property name="driverClassName" 		value="com.mysql.jdbc.Driver"/>
@@ -24,5 +37,14 @@
 		<property name="minIdle" 				value="5"/>
 	</bean>
 	<!-- if the web-app is more than one datasource, you can defined other datasource here-->
-
+	<bean id="dataSourceZDM" class="com.alibaba.druid.pool.DruidDataSource" destroy-method = "close">
+		<property name="driverClassName" 		value="com.mysql.jdbc.Driver"/>
+		<property name="url" 					value="jdbc:mysql://112.74.183.125:3306/ep?useUnicode=true&amp;characterEncoding=utf8"/>
+		<property name="username" 				value="mvc"/>
+		<property name="password" 				value="199112"/>
+		<property name="maxActive" 				value="20"/>
+		<property name="initialSize" 			value="10"/>
+		<property name="maxWait" 				value="20000"/>
+		<property name="minIdle" 				value="5"/>
+	</bean>
 </beans>  

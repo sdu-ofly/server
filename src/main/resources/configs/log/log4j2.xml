@@ -10,6 +10,7 @@
 			<AppenderRef ref="console"></AppenderRef>
 		</Root>
 	<Logger name="org.springframework.context.annotation" level="trace" additivity="true"/> 
+	<Logger name="org.springframework.jdbc.datasource" level="trace" additivity="true"/> 
 	<Logger name="org.springframework" level="info" additivity="true">
 		<AppenderRef ref="console"></AppenderRef>
 	</Logger>
