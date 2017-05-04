@@ -6,6 +6,6 @@
 
 4.connectPool druid      --> finish
 
-5.transaction            --> not start
+5.transaction            --> finish
 
 6.log4j2                 --> configure was finished. details printing message to special jar is not start.
