@@ -119,26 +119,6 @@
 		</dependency>
 		<!-- datasource connection pools end -->
 
-		<dependency>
-			<groupId>com.ofly.ep</groupId>
-			<artifactId>admin-web</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.ofly.ep</groupId>
-			<artifactId>admin-impl</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.ofly.ep</groupId>
-			<artifactId>admin-api</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.ofly</groupId>
-			<artifactId>server-core</artifactId>
-			<version>1.0.0</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<finalName>server</finalName>
