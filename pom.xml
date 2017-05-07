@@ -132,6 +132,50 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<webResources>
+						<webResource>
+							<directory>src/main/resources</directory>
+							<targetPath>resources</targetPath>
+						</webResource>
+						<webResource>
+							<directory>libs</directory>
+							<targetPath>WEB-INF/lib</targetPath>
+						</webResource>
+					</webResources>
+				</configuration>
+			</plugin>
+			<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-clean-plugin</artifactId>
+			<version>3.0.0</version>
+			<configuration>
+				<excludeDefaultDirectories>true</excludeDefaultDirectories>
+				<filesets>
+					<fileset>
+						<directory>src/main/resources</directory>
+						<excludes>
+							<exclude>configs/dtd/**</exclude>
+							<exclude>configs/log/**/*</exclude>
+							<exclude>configs/mybatis/**/*</exclude>
+							<exclude>configs/spring/**/*</exclude>
+							<exclude>configs/datasource.xml</exclude>
+							<exclude>css/common/**/*</exclude>
+							<exclude>img/common/**/*</exclude>
+							<exclude>js/common/**/*</exclude>
+						</excludes>
+					</fileset>
+					<fileset>
+						<directory>src/main/webapp/WEB-INF/jsp</directory>
+						<excludes>*</excludes>
+					</fileset>
+				</filesets>
+			</configuration>
+		</plugin>
 		</plugins>
 	</build>
 </project>
