@@ -13,17 +13,17 @@
                         http://www.springframework.org/schema/mvc    
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
        <!--  不起作用 再研究 -->            
-    <bean id="multiDataSource" class="com.ofly.core.datasource.DataSources">
+   <!--  <bean id="multiDataSource" class="com.ofly.core.datasource.DataSources">
 		<property name="targetDataSources">
 	        <map key-type="java.lang.String">
-	            <!--use key to choose datasource-->
+	            use key to choose datasource
 	            <entry value-ref="dataSourceDefault" key="dataSourceDefault"></entry>
 	        </map>
 	    </property>
-	    <!--set default dataSource-->
+	    set default dataSource
 	    <property name="defaultTargetDataSource" ref="dataSourceDefault">
 	    </property>
-	</bean>
+	</bean> -->
 	
     <!-- the web-app default datasource -->        
 	<bean id="dataSourceDefault" class="com.alibaba.druid.pool.DruidDataSource" destroy-method = "close">
