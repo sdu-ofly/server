@@ -5,6 +5,7 @@
 
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/common/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/common/jquery-easyui-1.5.1/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/common/jquery-easyui-1.5.1/locale/easyui-lang-zh_CN.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/common/zTree/jquery.ztree.all.js"></script>
 
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/common/ofly/ofly.js"></script>
