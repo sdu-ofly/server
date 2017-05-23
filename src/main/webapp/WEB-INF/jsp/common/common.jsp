@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/js/common/jquery-easyui-1.5.1/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/js/common/jquery-easyui-1.5.1/themes/icon.css">
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/common/zTree/zTreeStyle/zTreeStyle.css">
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/common/common.css">
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/common/icon.css">
