@@ -41,7 +41,6 @@
 	color: red;
 }
 .panel-tool a {
-	width: inherit;
 	opacity: 1;
 }
 .panel-tool a.panel-tool-close {

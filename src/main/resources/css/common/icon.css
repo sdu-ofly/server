@@ -1,40 +1,40 @@
 .fsdpicon-pause {
-	background: url('../../img/icons/control_pause_blue.png') no-repeat center center;
+	background: url('../../img/common/icons/control_pause_blue.png') no-repeat center center;
 }
 
 .fsdpicon-add {
-	background: url('../../img/icons/add.png') no-repeat center center;
+	background: url('../../img/common/icons/add.png') no-repeat center center;
 }
 
 .fsdpicon-start {
-	background: url('../../img/icons/control_play_blue.png') no-repeat center center;
+	background: url('../../img/common/icons/control_play_blue.png') no-repeat center center;
 }
 
 .fsdpicon-test {
-	background: url('../../img/icons/lightning.png') no-repeat center center;
+	background: url('../../img/common/icons/lightning.png') no-repeat center center;
 }
 
 .fsdpicon-edit {
-	background: url('../../img/icons/pencil.png') no-repeat center center;
+	background: url('../../img/common/icons/pencil.png') no-repeat center center;
 }
 .fsdpicon-delete {
-	background: url('../../img/icons/delete.png') no-repeat center center;
+	background: url('../../img/common/icons/delete.png') no-repeat center center;
 }
 .fsdpicon-note {
-	background: url('../../img/icons/note.png') no-repeat center center;
+	background: url('../../img/common/icons/note.png') no-repeat center center;
 }
 .fsdpicon-refresh {
-	background: url('../../img/icons/arrow_refresh.png') no-repeat center center;
+	background: url('../../img/common/icons/arrow_refresh.png') no-repeat center center;
 }
 
 .fsdpicon-define {
-	background: url('../../img/icons/plugin_add.png') no-repeat center center;
+	background: url('../../img/common/icons/plugin_add.png') no-repeat center center;
 }
 .fsdpicon-working {
-	background: url('../../img/icons/fdsp-working.ico') no-repeat center center;
+	background: url('../../img/common/icons/fdsp-working.ico') no-repeat center center;
 }
 .fsdpicon-stoped {
-	background: url('../../img/icons/fdsp-stoped.ico') no-repeat center center;
+	background: url('../../img/common/icons/fdsp-stoped.ico') no-repeat center center;
 }
 
 
